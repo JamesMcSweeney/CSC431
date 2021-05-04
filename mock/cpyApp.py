@@ -50,7 +50,7 @@ async def help(ctx, *args):
 	aliases=['i'])
 async def get_info(ctx):
 	source_message = "Source of data: " 
-	source_message += "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/"
+	source_message += "https://github.com/CSSEGISandData/COVID-19"
 	await ctx.send(source_message)
 
 @bot.event
@@ -113,9 +113,9 @@ def get_discord_image(plt, fig):
 def get_month_links():
 	root = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/"
 	root += "csse_covid_19_data/csse_covid_19_daily_reports_us/"
-	month_info = {"january":31, "february":28}
+	month_info = {"january":31, "february":28, "march":31}
 	'''
-	"march":31, "april":30, "may":31, "june":30, "july":31, "august":31,
+	"april":30, "may":31, "june":30, "july":31, "august":31,
 	"september":30, "october":31, "november":30, "december":31
 	'''
 	year = '2021'
